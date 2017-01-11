@@ -32,7 +32,7 @@ public class LogParserUtil {
         svb.add(logTokens[5]);
         svb.add(logTokens[6]);
         st = logTokens[7];
-        svb.add(handleQuery(st));
+        svb.add(handleQuery(st,"WT.ets","WT.nv"));
         svb.add(logTokens[8]);
         st = logTokens[11];
         svb.add(handleUA(st));
@@ -52,7 +52,7 @@ public class LogParserUtil {
         return UA ;
     }
 
-    private static SplitValueBuilder handleQuery(String analysedLog) {
+    private static SplitValueBuilder handleQuery(String analysedLog, String... keys) {
         Map<String, String> logMap = new HashMap<>();
         String[] uriQuerys = StringUtils.split(String.valueOf(analysedLog), SDCLogConstants.QUERY_SEPARTIOR);
         for (String uriQuery : uriQuerys) {
@@ -64,8 +64,8 @@ public class LogParserUtil {
         }
         Object s[] = logMap.keySet().toArray();
         SplitValueBuilder analy = new SplitValueBuilder();
-        analy.add(logMap.get("WT.mobile"));
-        analy.add(logMap.get("WT.nv"));
+        for(String key:keys){
+        analy.add(logMap.get(key));}
 //        System.out.println(analy);
         return analy;
     }
