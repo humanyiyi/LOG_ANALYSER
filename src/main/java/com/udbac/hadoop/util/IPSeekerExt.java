@@ -1,4 +1,4 @@
-package util;
+package com.udbac.hadoop.util;
 
 
 import com.udbac.hadoop.common.SDCLogConstants;

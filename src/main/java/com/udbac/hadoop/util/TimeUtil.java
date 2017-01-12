@@ -1,4 +1,4 @@
-package util;
+package com.udbac.hadoop.util;
 
 import org.apache.commons.lang.StringUtils;
 

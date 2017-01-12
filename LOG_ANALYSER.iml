@@ -196,5 +196,6 @@
     <orderEntry type="library" name="Maven: commons-daemon:commons-daemon:1.0.13" level="project" />
     <orderEntry type="library" name="Maven: junit:junit:4.12" level="project" />
     <orderEntry type="library" name="Maven: eu.bitwalker:UserAgentUtils:1.20" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-context:5.0.0.M4" level="project" />
   </component>
 </module>

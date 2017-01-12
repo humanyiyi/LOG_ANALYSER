@@ -1,7 +1,6 @@
 package com.udbac.hadoop.mr;
 
 import com.udbac.hadoop.common.SDCLogConstants;
-import com.udbac.hadoop.entity.SDCLog;
 import org.apache.commons.lang.StringUtils;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.io.LongWritable;
@@ -9,7 +8,7 @@ import org.apache.hadoop.io.NullWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.log4j.Logger;
-import util.SplitValueBuilder;
+import com.udbac.hadoop.util.SplitValueBuilder;
 
 
 import java.util.HashMap;

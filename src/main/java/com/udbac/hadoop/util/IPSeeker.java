@@ -1,4 +1,4 @@
-package util;
+package com.udbac.hadoop.util;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;

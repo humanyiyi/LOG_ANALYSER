@@ -1,4 +1,4 @@
-package util;
+package com.udbac.hadoop.util;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.HColumnDescriptor;

@@ -1,4 +1,4 @@
-package util;
+package com.udbac.hadoop.util;
 
 /**
  * Created by root on 2016/7/13.
